@@ -21,8 +21,8 @@ if run_button:
 
     st.write("Loading dataset...")
 
-    train_path = r"C:\Users\piyus\Downloads\DDoS\MSSQL-training.parquet"
-    test_path = r"C:\Users\piyus\Downloads\DDoS\MSSQL-testing.parquet"
+    train_path = "data/MSSQL-training.parquet"
+    test_path = "data/MSSQL-testing.parquet"
 
     train_df = pd.read_parquet(train_path)
     test_df = pd.read_parquet(test_path)
@@ -160,3 +160,4 @@ if run_button:
     ax.grid(True)
 
     st.pyplot(fig)
+
